@@ -1,0 +1,164 @@
+body {
+    font-family: 'Righteous', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+.top-title, .title, .title-2 {
+    font-family: righteous;;
+}
+
+.description, .option-title, .option-description, .option-price, p {
+    font-family: roboto;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+.top {
+    background-color: #CF2B2B;
+    height: 92px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 3px 3px 1px rgba(124, 122, 122, 0.8);
+}
+
+.top-title {
+    font-weight: 400;
+    font-size: 44px;
+    color: #ffffff;
+    margin-left: 21px;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    margin-left: 21px;
+}
+
+.content {
+    background-color: #E5E5E5;
+    margin-top: 92px;
+    margin-bottom: 92px;    
+}
+
+.title {
+    font-size: 26px;
+    font-weight: 400;
+    padding-top: 31px;
+    padding-left: 19px;
+}
+
+.title-2 {
+    font-size: 26px;
+    font-weight: 400;
+    padding-top: 21px;
+    padding-left: 19px;
+}
+
+.pratos, .bebidas, .sobremesas {
+    display: flex;
+    overflow-x: scroll
+}
+
+.options {
+    background-color: #ffffff;
+    height: 216px;
+    width: 172px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 8px;
+    margin: 17px 0 10px 19px;
+    box-shadow: 1px 1px 0.5em rgba(173, 173, 173, 0.9);
+    border: 5px solid rgba(124, 122, 122, 0);
+}
+
+.options img {
+    height: 87px;
+    width: 144px;
+    border-radius: 5px;
+    margin: 8px 0 0 9px;
+    padding-right: 9px;
+}
+
+.option-title {
+    font-weight: 700;
+    font-size: 16px;
+    color: #333333;
+    margin: 5px 5px 0 9px;
+}
+
+.option-description {
+    font-weight: 300;
+    font-size: 15px;
+    color: #a6a6a6;
+    margin-left: 9px;
+}
+
+.option-price {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 3px 0 5px 9px;
+} 
+
+.bottom {
+    height: 92px;
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    height: 61px;
+    width: 364px;
+    background-color: #cbcbcb;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.button :first-child {
+    margin-top: 8px;
+}
+
+
+/*adicionar selecionado nas options no JS*/
+.selecionado {
+    border: 5px solid #32B72F;
+    position: relative;
+}
+
+ion-icon {
+   
+    color: #32B72F;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    bottom: 5px;
+    right: 12px;
+}
+
+/*remover check nas options no JS*/
+.check {
+    visibility: hidden;
+}
