@@ -13,7 +13,7 @@ body {
 
 * {
     box-sizing: border-box;
-  }
+}
 
 .top {
     background-color: #CF2B2B;
@@ -85,8 +85,8 @@ body {
     height: 87px;
     width: 144px;
     border-radius: 5px;
-    margin: 8px 0 0 9px;
-    padding-right: 9px;
+    margin: 8px 8px 0 9px; 
+    object-fit: cover;
 }
 
 .option-title {
@@ -141,24 +141,107 @@ p {
     margin-top: 8px;
 }
 
-
 /*adicionar selecionado nas options no JS*/
+.option-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.selecionado ion-icon {
+    display: inline;
+}
+
 .selecionado {
     border: 5px solid #32B72F;
-    position: relative;
 }
 
 ion-icon {
-   
+    display: none;
     color: #32B72F;
     height: 20px;
     width: 20px;
-    position: absolute;
-    bottom: 5px;
-    right: 12px;
+    margin-right: 8px;
+ 
 }
 
-/*remover check nas options no JS*/
-.check {
-    visibility: hidden;
+/*adicionar avaiable ao fechar o pedido no JS*/
+
+.avaiable {
+    display: inline;
+    background-color: #32B72F;
+    color: #ffffff;
+}
+
+/*overlay - final do pedido*/
+
+
+
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-box {
+    height: 353px;
+    width: 377px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #50D074;
+    border-radius: 20px;
+}
+
+.overlay-title, .total, .preco-total {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.overlay-title {
+    margin-top: 10px;
+}
+
+.nome-prato, .preco-prato, .nome-bebida, .preco-bebida, .nome-sobremesa, .preco-sobremesa {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.prato-final, .bebida-final, .sobremesa-final, .total-final {
+    width: 333px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao-finalizar {
+    height: 52px;
+    width: 333px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    color: #50D074;
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cancelar {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.escondido {
+    display: none;
 }
