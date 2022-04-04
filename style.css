@@ -104,10 +104,17 @@ body {
 }
 
 .option-price {
+    display: flex;
     font-weight: 400;
     font-size: 16px;
     margin: 3px 0 5px 9px;
 } 
+
+.price {
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 3px;
+}
 
 .bottom {
     height: 92px;
@@ -147,11 +154,11 @@ p {
     justify-content: space-between;
 }
 
-.selecionado ion-icon {
+.prato-selecionado ion-icon, .bebida-selecionado ion-icon, .sobremesa-selecionado ion-icon {
     display: inline;
 }
 
-.selecionado {
+.prato-selecionado, .bebida-selecionado, .sobremesa-selecionado {
     border: 5px solid #32B72F;
 }
 
@@ -170,6 +177,12 @@ ion-icon {
     display: inline;
     background-color: #32B72F;
     color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: roboto;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 /*overlay - final do pedido*/
